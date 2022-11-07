@@ -237,7 +237,6 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
-  text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -367,7 +366,7 @@ img {
   color: var(--title-text-color);
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
   margin-bottom: 4px;
 }
 
@@ -641,13 +640,15 @@ p {
   position: absolute;
   bottom: 0;
   color: var(--white-color);
-  padding: 27px 0px;
   width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: rgba(47, 48, 58, 0.8);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -721,12 +722,13 @@ p {
 }
 
 .close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
   background: var(--white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  margin-left: auto;
-  margin-top: 8px;
-  margin-right: 8px;
+  cursor: pointer;
 }
